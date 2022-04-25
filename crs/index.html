@@ -6,6 +6,8 @@
 	<meta name="author" content="Anna">
 	<meta name="robots" content="all">
 	<meta property="og:title" content="Это моя первая страница ...">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 	
 	<title>Бушмелева Анна - Веб-разработчик</title>
 </head>
@@ -36,28 +38,35 @@
     
     <div class="summary"> 
         <h2>Обо мне</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat, quidem repellat! Culpa blanditiis itaque odio in, placeat numquam ratione!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat, quidem repellat! Culpa blanditiis itaque odio in, placeat numquam ratione!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat, quidem repellat! <br>Culpa blanditiis itaque odio in, placeat numquam ratione!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat, quidem repellat! <br>Culpa blanditiis itaque odio in, placeat numquam ratione! </p>
         <input tupe="submit" value="Скачать резюме">
     </div>
     
     <div class="skills">
         <h2>Что я умею</h2>
         <ul>
-            <li>Веб-дизайн<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum accusantium enim, facere blanditiis consequatur, nihil iste facilis vero necessitatibus magni!</li>
-            <li>Разработка<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore, esse quis aperiam omnis, impedit deleniti doloremque odio debitis earum.</li>
-            <li>CEO-Оптимизация<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, fuga, enim. Quo nemo eius recusandae veritatis ad laudantium laboriosam illo. Dolore, incidunt doloremque libero in velit obcaecati! Vel, nihil, rerum.</li>
-            <li>Маркетинг<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolorem eaque aliquam eius veritatis veniam officiis officia, sed suscipit ipsum?</li>
+            <h5>Веб-дизайн</h5><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum accusantium enim, facere blanditiis consequatur, nihil iste facilis vero necessitatibus magni!</li>
+            <h5>Разработка</h5><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore, esse quis aperiam omnis, impedit deleniti doloremque odio debitis earum.</li>
+            <h5>CEO-Оптимизация</h5><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, fuga, enim. Quo nemo eius recusandae veritatis ad laudantium laboriosam illo. </li>
+            <h5>Маркетинг</h5><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolorem eaque aliquam eius veritatis veniam officiis officia, sed suscipit ipsum?</li>
         </ul>
     </div>
     
     <div class="case">
         <h2>Кейсы</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas dolores fuga maxime eligendi officia, impedit ea! A quam, veniam.</p>
-        <ul>
-            <li>Client:<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>Website:<br>https://www.google.ru</li>
-            <li>Названия проекта<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla aut laborum officiis placeat omnis a laboriosam id! Et nostrum deleniti, modi atque deserunt, consequuntur!</li>
+    </div>
+    
+    <div class="foto">
+        
+    </div>
+    
+    <div class="case_i">
+        <ul >
+            <li><h5>Client:</h5><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li><h5>Website:</h5><br>https://www.google.ru</li>
+            <li><h6>Названия проекта:</h6><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla aut laborum officiis placeat omnis a laboriosam id!</li>
             <input tupe="submit" value="Visit live site">
         </ul>
     </div>
@@ -65,19 +74,19 @@
     <div class="price">
         <h2>Расчет стоимости</h2>
         <ul>
-            <li>Тип сайта<br><select name="list1">
+            <li><h5>Тип сайта</h5><br><select name="list1">
                 <option value="opt1">Выберите пункт...</option>
                 <option value="opt2">Выберите пункт...</option>
                 <option value="opt3">Выберите пункт...</option>
                 <option value="opt4">Выберите пункт...</option>
             </select></li>
-            <li>Дизайн<br><select name="list2">
+            <li><h5>Дизайн</h5><br><select name="list2">
                 <option value="opt1">Выберите пункт...</option>
                 <option value="opt2">Выберите пункт...</option>
                 <option value="opt3">Выберите пункт...</option>
                 <option value="opt4">Выберите пункт...</option>
             </select></li>
-            <li>Адаптивность<br><select name="list3">
+            <li><h5>Адаптивность</h5><br><select name="list3">
                 <option value="opt1">Выберите пункт...</option>
                 <option value="opt2">Выберите пункт...</option>
                 <option value="opt3">Выберите пункт...</option>
@@ -111,14 +120,11 @@
         <h2>Отзывы</h2>
         <form action="#">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem expedita fugiat voluptas architecto omnis soluta minima commodi optio, unde inventore?</p>
-            <cite>Михаил, ООО"Кот и Пес"</cite>
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+            <cite><b>Михаил</b>, ООО"Кот и Пес".</cite>
         </form>
     </div>
     
-    <footer>
+    <footer class="footer">
         <h2>Мои контакты</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam.</p>
         <ul>
@@ -127,11 +133,18 @@
             <li>Номер</li>
         </ul>
         <h4>Оставьте мне сообщение</h4>
-        <input type="text" name="text_input"  placeholder="Имя">
-        <input type="text" name="text_input"  placeholder="Email">
-        <textarea name="list1" id="list1" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <div class="input_text">
+                <input type="text" name="text_input"  placeholder="Имя">
+            </div>
+            <div class="text_input">
+                <input type="text" name="text_input"  placeholder="Email">
+            </div>
+        <textarea name="list1" id="list1" cols="40" rows="0.1" placeholder="Сообщение"></textarea>
         <input tupe="submit" value="отправить">
     </footer>
+    <div class="cart">
+        <h5>I'M HERE</h5>
+    </div>
     
     <div class="author">
         <cite>2022 Bushmeleva Anna.</cite>
