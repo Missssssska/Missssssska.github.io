@@ -96,8 +96,8 @@ nav{
 .skills{
     float: left;
     width: 100%;
-    height: 100%;
-    background:url(../img/3.png) no-repeat 20% 20%, url(../img/4.png) no-repeat 43% 20%, url(../img/5.png) no-repeat 65% 20%, url(../img/6.png) no-repeat 87% 20%, url(../img/bgd2.png) no-repeat;
+    text-align: center;
+    background: url(../img/bgd2.png) no-repeat;
 }
 .skills h2{
     text-align: center;
@@ -109,38 +109,47 @@ nav{
     padding-bottom: 30px; 
     background: url(../img/1.png) center/15% 5% no-repeat;
 }
-.skills ul{
+
+.skills_veb{
     float: left;
     width: 100%;
     text-align: center;
-    padding: 50px 60px 15px 90px;
-    color: #979ea8;
-    font-size: 12px;
-    
+    background: url(../img/3.png)  no-repeat;
+    padding: 10px;
+
+}
+.skills_dev{
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: url(../img/4.png)  no-repeat;
+    padding: 10px;
+}
+
+.skills_ceo{
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: url(../img/5.png)  no-repeat;
+    padding: 10px;
+}
+.skills_mark{
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: url(../img/6.png)  no-repeat;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 .skills h5{
-    float: left;
-    width: 0;
-    font-size: 13px;
-    color: #e87600;
-    text-align: center;
-    margin: 20px 50px 30px 60px;
- 
-
+    color: #e97700;
 }
-.skills li{
-
-    float: left;
-    width: 15%;
-    color: #979ea8;
-    font-size: 12px;
-    text-align: center;
-    padding: 40px;
+.skills p{
+    color: #37475a;
 }
+
 .case{
-    float: left;
     width: 100%;
-    height: 260px;
     background: url(../img/bgd3.png);
 }
 .case h2{
@@ -149,33 +158,29 @@ nav{
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 70px;
-    padding-top: 40px;
-    background: url(../img/1.png) center/10% 3% no-repeat;
+    line-height: 60px;
+    padding-bottom: 60px;
+    background: url(../img/1.png) no-repeat;
 
 }
 .case p{
     text-align: center;
     font-size: 16px;
     color: #37475a;
-    padding-top: 20px;
-    background: none;
+    padding-bottom: 20px;
 }
 .foto{
-    float: left;
     width: 100%;
-    height: 100%;
+    height: 500px;
     background: url(../img/foto.png) 100% center/70% 90% no-repeat;
     background-position: center; 
 }
 .case_i{
     float: left;
     width: 100%;
-    height: 200px;
     color: #304154;
     font-size: 16px;
-    margin:  0px 0px 0px 200px;
-    text-align: left;
+    text-align: center;
     
 }
 .case_i h5{
@@ -200,60 +205,65 @@ nav{
     margin-top: 30px;
     text-transform: uppercase;
     background-color: #00b6af;
+    margin-bottom: 60px;
 }
 
 .price{
-    float: left;
     text-align: center;
     width: 100%;
-    height: 850px;
-    background: url(../img/text/l.png) 50% center/80%  no-repeat ;
+    background: url(../img/text/l.png) center 90%  no-repeat ;
 }
 .price h2{
     text-align: center;
     font-size: 23px;
     font-weight: bold;
-    margin-top: 150px;
-    margin-bottom: 30px;
     color: #102031;
+    padding: 30px;
 }
 .price h5{
-    float: left;
-    text-align: center;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 50px 50px 60px 70px ;
     color: #0f1f31;
+    text-align: left;
+    padding-left: 360px;
 }
 .price select{
     color: #747474;
     background-color: #eeeeee;
-    padding: 5px 250px;
-    margin-bottom: 25px;
+    padding: 10px 250px;
+    margin-bottom: 35px;
 }
 .price table{
     color: #102032;
-    float: left;
-    margin: 25px 25px;
+    text-align: left;
+    padding: 20px;
+    padding-left: 360px;
+    margin-bottom: 40px;
+
+
+}
+.price td{
+    padding-left: 540px;
+    font-weight: bold;
+
 }
 
 .statistics{
-    float: left;
     width: 100%;
-    height: 400px;
-    background: url(../img/10.png)  no-repeat 84% 60%, url(../img/9.png)  no-repeat 60% 60%, url(../img/8.png)  no-repeat 36% 60%, url(../img/7.png)  no-repeat 13% 60%, url(../img/fon.png) 100% center/100% no-repeat;
+    height: 350px;
+    background:  url(../img/10.png)  no-repeat 84% 60%, url(../img/9.png)  no-repeat 60% 60%, url(../img/8.png)  no-repeat 36% 60%, url(../img/7.png)  no-repeat 13% 60%, url(../img/fon.png) 100% center/100% no-repeat;
+  
 }
 .statistics h2{
+    line-height: 100px;
     text-align: center;
     font-size: 23px;
     font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    padding-bottom: 45px;
     color: #102031;
     text-transform: uppercase;
-    background: url(../img/1.png) center/10% 5% no-repeat;
+    padding-bottom: 35px;
+    background: url(../img/1.png) center/20% 3% no-repeat;
 }
 .statistics li{
     float: left;
@@ -264,96 +274,107 @@ nav{
     padding-top: 60px;
     font-size: 15px;
     text-transform: uppercase;
+
 }
+
 .rewiew{
-    float: left;
     width: 100%;
     height: 300px;
     color: #172c40;
     text-align: center;
-    background: url(../img/11.png) 47% 80% no-repeat, url(../img/12.png) center 80% no-repeat, url(../img/12.png) 53% 80% no-repeat;
+    background: url(../img/boy2.png) center 30% no-repeat;
 }
 .rewiew h2{
     font-size: 23px;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 30px;
     padding-bottom: 45px;
     text-transform: uppercase;
     background: url(../img/1.png) center/7% 5% no-repeat; 
     
+    
 }
 .rewiew p{
     font-size: 16px;
+    padding-top: 80px;
     padding-bottom: 40px;
-    background: none;
 }
 .rewiew cite{
     font-style: normal;
     font-size: 18px;
+    padding-bottom: 20px;
+    background: url(../img/11.png) 30% 100% no-repeat, url(../img/12.png) center 100% no-repeat, url(../img/12.png) 70% 100% no-repeat;
 }
+
 .footer {
-    float: left;
     width: 100%;
-    height: 700px;
-    text-align: center;
+    height: 400px;
     background: url(../img/13.png) center/100% no-repeat;
     color: #fff;
 }
 .footer h2{
+    text-align: center;
     font-size: 23px;
     font-weight: bold;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    padding-bottom: 45px;
+    padding-top: 30px;
     text-transform: uppercase;
-    background: url(../img/1.png) center/10% 5% no-repeat;
+    padding-bottom: 60px;
+    background: url(../img/1.png) center/13% 3% no-repeat;
 }
 .footer p{
-    margin-bottom: 40px;
     font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .footer ul{
+    float: left;
+    width: 100%;
     text-align: center;
-    color: #fff;
     background:  url(../img/17.png) 35% 45%  no-repeat, url(../img/18.png) 50% 50% no-repeat, url(../img/19.png) 65% 45%  no-repeat;
-
+    margin: 20px;
+    
 }
 .footer h4{
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 20px;
-    margin-bottom: 40px;
-}
-.input_text{
-    float: left;
-    width: 500px;
     text-align: center;
-    color: #5d5d5e;
-    margin:auto;
-}
-.text_input{
-    float: left;
-    width: 500px;
-    text-align: center;
-    color: #5d5d5e;
-    margin: center;
-    
-}
-.footer textarea{    
-    color: #5d5d5e;
-    margin-top: 30px;
-    margin-right: 60px;
 
 }
-.footer>input{
+
+.input_text{
     float: left;
+    width: 100%;
+    text-align: center;
+    color: #5d5d5e;
+    margin-right: 10px;
+}
+.input_text input{
+
+    height: 25px;
+    border: 5px solid #d6dbe1;
+    padding: 10px 25px;
+    background-color: #d6dbe1;
+    margin: 10px;
+}
+.text_input{
+    text-align: center;
+}
+.text_input input{
+
+    height: 25px;
+    border: 5px solid #d6dbe1;
+    padding: 10px 150px;
+    background-color: #d6dbe1;
+}
+    
+.footer>input{
     text-align: center;
     width: 150px;
-    margin: 90px 60px 0px 30px;
+    margin-left: 600px;
+    margin-top: 20px;
     height: 25px;
-    border: 5px  #fff;
+    border: 5px solid #fff;
     border-radius: 5px;
     color: #2d3f52;
     font-size: 13px;
@@ -361,7 +382,6 @@ nav{
 
 }
 .cart{
-    float: left;
     width: 100%;
     height: 300px;
     text-align: center;
@@ -381,7 +401,6 @@ nav{
     
 }
 .author{
-    float: left;
     width: 100%;
     height: 60px;
     background: #2a3d50;
@@ -391,4 +410,4 @@ nav{
     text-align: center;
     margin: 20px 550px;
     line-height: 60px;
-}
+} **/
