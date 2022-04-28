@@ -75,7 +75,8 @@ nav{
     margin-bottom: 180px;
 }
 .summary p{
-    text-align: center;
+    text-align: left;
+    margin-left: 370px;
     font-size: 16px;
     color: #a6abb2;
     padding-top: 20px;
@@ -93,10 +94,11 @@ nav{
     padding: 0px 0.2px;
     margin-top: 30px;
 }
+
 .skills{
+    text-align: center;
     float: left;
     width: 100%;
-    text-align: center;
     background: url(../img/bgd2.png) no-repeat;
 }
 .skills h2{
@@ -112,41 +114,43 @@ nav{
 
 .skills_veb{
     float: left;
-    width: 100%;
+    width: 15%;
     text-align: center;
-    background: url(../img/3.png)  no-repeat;
     padding: 10px;
+    margin: 0px 60px;
 
 }
 .skills_dev{
     float: left;
-    width: 100%;
+    width: 15%;
     text-align: center;
-    background: url(../img/4.png)  no-repeat;
     padding: 10px;
+    margin: 0px 60px;
 }
 
 .skills_ceo{
     float: left;
-    width: 100%;
+    width: 15%;
     text-align: center;
-    background: url(../img/5.png)  no-repeat;
     padding: 10px;
+     margin: 0px 60px;
 }
 .skills_mark{
     float: left;
-    width: 100%;
+    width: 15%;
     text-align: center;
-    background: url(../img/6.png)  no-repeat;
     padding: 10px;
     margin-bottom: 30px;
+    margin: 0px 60px;
 }
 .skills h5{
     color: #e97700;
+    margin: 10px 0px;
 }
 .skills p{
     color: #37475a;
 }
+**/
 
 .case{
     width: 100%;
@@ -159,8 +163,8 @@ nav{
     font-weight: bold;
     text-align: center;
     line-height: 60px;
-    padding-bottom: 60px;
-    background: url(../img/1.png) no-repeat;
+    padding: 30px 0px;
+    background: url(../img/1.png) center 90%  no-repeat;
 
 }
 .case p{
@@ -177,22 +181,16 @@ nav{
 }
 .case_i{
     float: left;
-    width: 100%;
+    width: 50%;
+    text-align: left;
+    padding-left: 200px;
     color: #304154;
     font-size: 16px;
-    text-align: center;
-    
 }
 .case_i h5{
     text-transform: uppercase;
     font-weight: bold;
     padding-top: 10px;
-
-}
-.case_i h6{
-    font-weight: bold;
-    padding-top: 10px;
-
 }
 .case_i input{
     text-align: center;
@@ -202,16 +200,29 @@ nav{
     color: #fff;
     font-size: 13px;
     padding: 0px 0.2px;
-    margin-top: 30px;
     text-transform: uppercase;
     background-color: #00b6af;
-    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.case_a{
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-right: 180px;
+    color: #304154;
+    font-size: 16px;
+}
+
+.case_a h5{
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 .price{
     text-align: center;
     width: 100%;
-    background: url(../img/text/l.png) center 90%  no-repeat ;
+    background: url(../img/text/l.png) center 80%  no-repeat ;
+    margin-top: 150px;
 }
 .price h2{
     text-align: center;
@@ -309,7 +320,7 @@ nav{
 .footer {
     width: 100%;
     height: 400px;
-    background: url(../img/13.png) center/100% no-repeat;
+    background: url(../img/17.png) 24% 40%  no-repeat, url(../img/18.png) 50% 40% no-repeat, url(../img/19.png) 75% 40%  no-repeat , url(../img/13.png) center/100% no-repeat;
     color: #fff;
 }
 .footer h2{
@@ -324,21 +335,25 @@ nav{
 .footer p{
     font-size: 14px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.footer ul{
+
+.footer li{
     float: left;
-    width: 100%;
     text-align: center;
-    background:  url(../img/17.png) 35% 45%  no-repeat, url(../img/18.png) 50% 50% no-repeat, url(../img/19.png) 65% 45%  no-repeat;
-    margin: 20px;
-    
+    font-size: 14px;
+    margin-left: 290px;
+    padding: 50px 0px;
+    letter-spacing: 3px;
+
 }
 .footer h4{
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    width: 100%;
+    float: left;
 
 }
 
@@ -353,9 +368,9 @@ nav{
 
     height: 25px;
     border: 5px solid #d6dbe1;
-    padding: 10px 25px;
+    margin: 10px 25px;
     background-color: #d6dbe1;
-    margin: 10px;
+    padding-right: 33px;
 }
 .text_input{
     text-align: center;
@@ -364,7 +379,8 @@ nav{
 
     height: 25px;
     border: 5px solid #d6dbe1;
-    padding: 10px 150px;
+    margin: 0px 100px;
+    padding-right: 300px;
     background-color: #d6dbe1;
 }
     
@@ -374,11 +390,12 @@ nav{
     margin-left: 600px;
     margin-top: 20px;
     height: 25px;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     border-radius: 5px;
-    color: #2d3f52;
+    color: #fff;
     font-size: 13px;
     padding: 0px 0.2px;
+    background-color: transparent;
 
 }
 .cart{
