@@ -5,14 +5,32 @@ nav{
     width: 100%;
     height: 60px;
     background: #2a3d50;
+    position: fixed;
 }
+
 .logo{
     color: #fff;
     font-size: 20px;
     line-height: 60px;
     padding-left: 250px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
 }
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+
 .menu{
     float: left;
     padding-left: 250px;
@@ -25,19 +43,100 @@ nav{
     margin-right: 25px;
     font-size: 12px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
     
+}
+.menu li a{
+    transition: all 0.2s;
+    color: #fff;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: #fff;
+}
+
+.menu li a:hover{
+    color: #f2810b;
+}
+
+.menu li a:active{
+    transform: scale(1.4);
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+        
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    float: left;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .main{
     width: 100%;
     height: 100%;
     background:url(../img/shadow.png) 100% 100%/auto no-repeat , url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bgd.png) center/cover no-repeat; 
+    background-attachment: fixed;
+
 }
 .title_container{
     float:left;
     margin:  300px 0px 0px 280px;
     color: #21354a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 .title_container h1{
     font-size: 40px;
@@ -56,50 +155,87 @@ nav{
     border-radius: 5px;
     color: #697784;
     font-size: 13px;
-    padding: 0px 0.2px;
-    margin: 25px 14px 0px 14px;
+    padding: 0px 30px;
+    margin: 25px 20px 0px 20px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title_container input:hover{
+    background: #2a3d50;
+    color: #fff;
+}
+.title_container input:active{
+    transform: scale(1.2);
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 280pxpx;
+        
+    }
 }
 .summary{
     width: 100%;
     height: 100%;
-    background: url(../img/boy1.png) no-repeat center ,url(../img/bgd1.png) 100% center/cover  no-repeat;
+    background: url(../img/boy1.png) no-repeat center 25% ,url(../img/bgd1.png) 100% center/cover  no-repeat;
     text-align: center;
 }
 .summary h2{
     font-size: 25px;
     color: #1a2e43;
     text-transform: uppercase;
-    background: url(../img/1.png) center/10% 1% no-repeat;
-    padding: 80px 0px 150px 0px;
+    background: url(../img/1.png) center/10% 2% no-repeat;
+    padding: 40px 0px 70px 0px;
     font-weight: bold;
     margin-bottom: 180px;
 }
+
+
 .summary p{
     text-align: left;
     margin-left: 370px;
     font-size: 16px;
     color: #a6abb2;
-    padding-top: 20px;
+    padding-top: 50px;
     background: none;
     
 }
 .summary input{
-    text-align: center;
+    text-align: right;
     height: 25px;
     border: 2px solid #697784;
     background: url(../img/2.png) no-repeat 7%;
     border-radius: 5px;
     color: #697784;
     font-size: 13px;
-    padding: 0px 0.2px;
-    margin-top: 30px;
+    padding: 0px 30px;
+    margin-top: 50px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
+
+.summary input:hover{
+    background: #2a3d50;
+    color: #fff;
+}
+.summary input:active{
+    transform: scale(1.2);
+}
+
 
 .skills{
     text-align: center;
     float: left;
     width: 100%;
     background: url(../img/bgd2.png) no-repeat;
+    background-attachment: fixed;
+
+
 }
 .skills h2{
     text-align: center;
@@ -119,6 +255,7 @@ nav{
     padding: 10px;
     margin: 0px 60px;
 
+
 }
 .skills_dev{
     float: left;
@@ -126,6 +263,7 @@ nav{
     text-align: center;
     padding: 10px;
     margin: 0px 60px;
+
 }
 
 .skills_ceo{
@@ -134,6 +272,7 @@ nav{
     text-align: center;
     padding: 10px;
      margin: 0px 60px;
+
 }
 .skills_mark{
     float: left;
@@ -142,6 +281,7 @@ nav{
     padding: 10px;
     margin-bottom: 30px;
     margin: 0px 60px;
+  
 }
 .skills h5{
     color: #e97700;
@@ -150,7 +290,23 @@ nav{
 .skills p{
     color: #37475a;
 }
-**/
+.skills_card{
+    -webkit-animation: skills_card 15s ease forwards;
+    -o-animation: skills_card 15s ease forwards;
+    animation: skills_card 15s ease forwards;
+}
+    
+@keyframes skills_card{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 60px;
+    }
+}
+
 
 .case{
     width: 100%;
@@ -178,6 +334,7 @@ nav{
     height: 500px;
     background: url(../img/foto.png) 100% center/70% 90% no-repeat;
     background-position: center; 
+
 }
 .case_i{
     float: left;
@@ -199,11 +356,22 @@ nav{
     border-radius: 5px;
     color: #fff;
     font-size: 13px;
-    padding: 0px 0.2px;
+    padding: 0px 30px;
     text-transform: uppercase;
     background-color: #00b6af;
     margin-top: 30px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
+
+.case_i input:hover{
+    background: #2a3d50;
+}
+.case_i input:active{
+    transform: scale(1.2);
+}
+
+
 .case_a{
     float: left;
     width: 50%;
@@ -263,9 +431,10 @@ nav{
 .statistics{
     width: 100%;
     height: 350px;
-    background:  url(../img/10.png)  no-repeat 84% 60%, url(../img/9.png)  no-repeat 60% 60%, url(../img/8.png)  no-repeat 36% 60%, url(../img/7.png)  no-repeat 13% 60%, url(../img/fon.png) 100% center/100% no-repeat;
-  
+    background:  url(../img/fon.png) 100% center/100% no-repeat;
+    background-attachment: fixed;
 }
+
 .statistics h2{
     line-height: 100px;
     text-align: center;
@@ -276,17 +445,75 @@ nav{
     padding-bottom: 35px;
     background: url(../img/1.png) center/20% 3% no-repeat;
 }
-.statistics li{
-    float: left;
-    text-align: center;
-    color: #283b4e;
-    margin: 50px 50px 0px 50px;
-    padding-left: 50px;
-    padding-top: 60px;
-    font-size: 15px;
-    text-transform: uppercase;
 
+.statistics_foto{
+    -webkit-animation: statistics_form 35s ease forwards;
+    -o-animation: statistics_form 35s ease forwards;
+    animation: statistics_form 35s ease forwards;
+    opacity: 0; 
 }
+
+.statistics p{
+    color: #283b4e;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.statics{
+    float: left;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 60px;
+}
+.statics2{
+    float: left;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 60px;
+}
+.statics3{
+    float: left;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 60px;
+}
+.statics4{
+    float: left;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 60px;
+}
+
+
+@keyframes statistics_form{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 50px;
+        
+    }
+} 
+
+.statics:nth-child(1){
+    animation-delay: 2s;
+}
+.statics2:nth-child(2){
+    animation-delay: 4s;
+}
+.statics3:nth-child(3){
+    animation-delay: 6s;
+}
+.statics4:nth-child(4){
+    animation-delay: 8s;
+}
+
 
 .rewiew{
     width: 100%;
@@ -321,6 +548,7 @@ nav{
     width: 100%;
     height: 400px;
     background: url(../img/17.png) 24% 40%  no-repeat, url(../img/18.png) 50% 40% no-repeat, url(../img/19.png) 75% 40%  no-repeat , url(../img/13.png) center/100% no-repeat;
+    background-attachment: fixed;
     color: #fff;
 }
 .footer h2{
@@ -372,15 +600,15 @@ nav{
     background-color: #d6dbe1;
     padding-right: 33px;
 }
-.text_input{
+.text_area{
     text-align: center;
 }
-.text_input input{
+.text_area textarea{
 
     height: 25px;
     border: 5px solid #d6dbe1;
     margin: 0px 100px;
-    padding-right: 300px;
+    padding-right: 380px;
     background-color: #d6dbe1;
 }
     
@@ -396,7 +624,16 @@ nav{
     font-size: 13px;
     padding: 0px 0.2px;
     background-color: transparent;
+    transition: all 0.2s;
+    transform: scale(1);
+}
 
+.footer>input:hover{
+    background: #fff;
+    color: #2a3d50;
+}
+.footer>input:active{
+    transform: scale(1.2);
 }
 .cart{
     width: 100%;
