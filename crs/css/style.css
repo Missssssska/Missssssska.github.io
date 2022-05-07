@@ -6,13 +6,13 @@ nav{
     height: 60px;
     background: #2a3d50;
     position: fixed;
+    z-index: 10;
 }
 
 .logo{
     color: #fff;
     font-size: 20px;
     line-height: 60px;
-    padding-left: 250px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
@@ -33,7 +33,7 @@ main{
 
 .menu{
     float: left;
-    padding-left: 250px;
+
     
 }
 .menu li{
@@ -54,6 +54,7 @@ main{
     color: #fff;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
 }
 .menu li a:visited{
     color: #fff;
@@ -118,16 +119,19 @@ main{
   }
 }
 
+.white-btn:visited{
+    color: #fff;
+}
+
 .main{
     width: 100%;
     height: 100%;
-    background:url(../img/shadow.png) 100% 100%/auto no-repeat , url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bgd.png) center/cover no-repeat; 
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bgd.png) center/cover no-repeat; 
     background-attachment: fixed;
 
 }
 .title_container{
     float:left;
-    margin:  300px 0px 0px 280px;
     color: #21354a;
     text-align: center;
     opacity: 0;
@@ -139,7 +143,8 @@ main{
     animation-delay: 2.4s;
 }
 .title_container h1{
-    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 45px;
     font-weight: bold;
 }
 .title_container h4{
@@ -175,33 +180,63 @@ main{
     }
     to{
         opacity: 1;
-        margin-left: 280pxpx;
+        margin-left: 0px;
         
     }
 }
+
+@media (max-width: 988px){
+    .title_container, .title_container h4, .title_container input{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .title_container input{
+        border: 2px solid #fff;
+    }
+    
+    .main{
+        position: relative;
+    }
+    
+    .main::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
 .summary{
     width: 100%;
     height: 100%;
-    background: url(../img/boy1.png) no-repeat center 25% ,url(../img/bgd1.png) 100% center/cover  no-repeat;
+    background: url(../img/bgd1.png) 100% center/cover  no-repeat;
     text-align: center;
 }
 .summary h2{
     font-size: 25px;
     color: #1a2e43;
     text-transform: uppercase;
-    background: url(../img/1.png) center/10% 2% no-repeat;
-    padding: 40px 0px 70px 0px;
+    background: url(../img/1.png) center/15% 5% no-repeat;
     font-weight: bold;
-    margin-bottom: 180px;
+    margin-top: 40px;
+    padding-bottom: 30px;    
 }
 
+.summary_foto{
+    height: 35%;
+    background: url(../img/boy1.png) no-repeat center;
+}
 
 .summary p{
     text-align: left;
-    margin-left: 370px;
     font-size: 16px;
     color: #a6abb2;
-    padding-top: 50px;
     background: none;
     
 }
@@ -227,6 +262,40 @@ main{
     transform: scale(1.2);
 }
 
+@media (max-width: 988px){
+    .summary, .summary h2, .summary p, .summary input{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .summary{
+        position: relative;
+    }
+    .summary input{
+        border: 2px solid #fff;
+    }
+    
+    .summary p::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+    }
+    
+    .summary::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
 
 .skills{
     text-align: center;
@@ -243,46 +312,46 @@ main{
     font-weight: bold;
     font-size: 25px;
     color: #1a2e43;
-    margin-top: 40px;
     padding-bottom: 30px; 
     background: url(../img/1.png) center/15% 5% no-repeat;
 }
-
+/**
 .skills_veb{
     float: left;
-    width: 15%;
+    width: 17%;
     text-align: center;
     padding: 10px;
-    margin: 0px 60px;
+    margin: 0px 30px;
 
 
 }
 .skills_dev{
     float: left;
-    width: 15%;
+    width: 17%;
     text-align: center;
     padding: 10px;
-    margin: 0px 60px;
+    margin: 0px 30px;
 
 }
 
 .skills_ceo{
     float: left;
-    width: 15%;
+    width: 17%;
     text-align: center;
     padding: 10px;
-     margin: 0px 60px;
+     margin: 0px 30px;
 
 }
 .skills_mark{
     float: left;
-    width: 15%;
+    width: 17%;
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
-    margin: 0px 60px;
+    margin-left: 30px;
   
-}
+} **/
+
 .skills h5{
     color: #e97700;
     margin: 10px 0px;
@@ -303,10 +372,35 @@ main{
     }
     to{
         opacity: 1;
-        margin-left: 60px;
+        margin-left: 0px;
     }
 }
 
+@media (max-width: 988px){
+    .skills, .skills h2, .skills h5, .skills p, skills img {
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+
+    .skills h5{
+        color: #e97700;
+    }
+    .skills{
+        position: relative;
+    }
+    
+    .skills::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
 
 .case{
     width: 100%;
@@ -319,7 +413,6 @@ main{
     font-weight: bold;
     text-align: center;
     line-height: 60px;
-    padding: 30px 0px;
     background: url(../img/1.png) center 90%  no-repeat;
 
 }
@@ -327,8 +420,27 @@ main{
     text-align: center;
     font-size: 16px;
     color: #37475a;
-    padding-bottom: 20px;
 }
+
+@media (max-width: 988px){
+    .case, .case h2, .case p{
+        color: #fff;
+        position: relative;
+        z-index: 2;
+    }  
+    .case::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
+
 .foto{
     width: 100%;
     height: 500px;
@@ -336,18 +448,32 @@ main{
     background-position: center; 
 
 }
+
+@media (max-width: 988px){
+    .foto{
+        color: #fff;
+        position: relative;
+        z-index: 2;
+    }  
+    .foto::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
 .case_i{
-    float: left;
-    width: 50%;
-    text-align: left;
-    padding-left: 200px;
+    width: 100%;
     color: #304154;
     font-size: 16px;
 }
 .case_i h5{
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 10px;
 }
 .case_i input{
     text-align: center;
@@ -371,26 +497,48 @@ main{
     transform: scale(1.2);
 }
 
+@media (max-width: 988px){
+    .case_i, .case_i h5, .case_i li, .case_i input{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }  
+    .case_i h5{
+        color: #e97700;
+    }
 
+    .case_i input{
+        border: 2px solid #fff;
+    }
+    .case_i::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
+/**
 .case_a{
     float: left;
     width: 50%;
-    text-align: left;
-    padding-right: 180px;
     color: #304154;
     font-size: 16px;
 }
 
 .case_a h5{
     font-weight: bold;
-    padding-top: 10px;
 }
+**/
 
 .price{
     text-align: center;
     width: 100%;
-    background: url(../img/text/l.png) center 80%  no-repeat ;
-    margin-top: 150px;
+    background: url(../img/text/l.png) center 87%  no-repeat ;
 }
 .price h2{
     text-align: center;
@@ -404,29 +552,61 @@ main{
     font-weight: bold;
     text-transform: uppercase;
     color: #0f1f31;
-    text-align: left;
-    padding-left: 360px;
+
+
 }
 .price select{
     color: #747474;
     background-color: #eeeeee;
     padding: 10px 250px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .price table{
     color: #102032;
     text-align: left;
-    padding: 20px;
-    padding-left: 360px;
-    margin-bottom: 40px;
-
-
+    margin-left: 60px;
 }
 .price td{
-    padding-left: 540px;
     font-weight: bold;
 
 }
+
+@media (max-width: 988px){
+    .price, .price td, .price table, .price select, .price h5, .price h2, .price td, .price th{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }  
+    .price h5{
+        color: #e97700;
+        text-align: center;
+    }
+    .price td{
+        color: #e97700;
+    }
+    .price th{
+        color: #e97700;
+        text-transform: uppercase;
+    }
+    .price select{
+        padding: 10px 90px;
+    }
+    .price table{
+        margin-bottom: 10px;
+    }
+
+    .price::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
 
 .statistics{
     width: 100%;
@@ -446,20 +626,20 @@ main{
     background: url(../img/1.png) center/20% 3% no-repeat;
 }
 
-.statistics_foto{
+/**.statistics_foto{
     -webkit-animation: statistics_form 35s ease forwards;
     -o-animation: statistics_form 35s ease forwards;
     animation: statistics_form 35s ease forwards;
     opacity: 0; 
-}
+} **/
 
 .statistics p{
     color: #283b4e;
     font-size: 16px;
     text-transform: uppercase;
-    padding-top: 40px;
+    margin-top: 20px;
 }
-.statics{
+/**.statics{
     float: left;
     width: 15%;
     text-align: center;
@@ -487,7 +667,26 @@ main{
     padding: 10px;
     margin: 0px 60px;
 }
+**/
 
+@media (max-width: 988px){
+    .statistics p, .statistics h2, .statistics, .statistics img {
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }  
+
+    .statistics::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
 
 @keyframes statistics_form{
     from{
@@ -517,25 +716,24 @@ main{
 
 .rewiew{
     width: 100%;
-    height: 300px;
+    height: 350px;
     color: #172c40;
     text-align: center;
-    background: url(../img/boy2.png) center 30% no-repeat;
+    background: url(../img/boy2.png) center 25% no-repeat;
+
 }
 .rewiew h2{
     font-size: 23px;
     font-weight: bold;
-    margin: 30px;
     padding-bottom: 45px;
     text-transform: uppercase;
-    background: url(../img/1.png) center/7% 5% no-repeat; 
-    
-    
+    background:  url(../img/1.png) center/7% 5% no-repeat; 
+      
 }
+
 .rewiew p{
     font-size: 16px;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    margin-top: 100px;
 }
 .rewiew cite{
     font-style: normal;
@@ -544,10 +742,28 @@ main{
     background: url(../img/11.png) 30% 100% no-repeat, url(../img/12.png) center 100% no-repeat, url(../img/12.png) 70% 100% no-repeat;
 }
 
+@media (max-width: 988px){
+    .rewiew cite, .rewiew p, .rewiew h2, .rewiew, .rewiew img {
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }  
+    .rewiew::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
 .footer {
     width: 100%;
-    height: 400px;
-    background: url(../img/17.png) 24% 40%  no-repeat, url(../img/18.png) 50% 40% no-repeat, url(../img/19.png) 75% 40%  no-repeat , url(../img/13.png) center/100% no-repeat;
+    height: 550px;
+    background:  url(../img/13.png) center/100% no-repeat;
     background-attachment: fixed;
     color: #fff;
 }
@@ -563,18 +779,16 @@ main{
 .footer p{
     font-size: 14px;
     text-align: center;
-    margin-bottom: 10px;
+   /** background: url(../img/17.png) 24% 40%  no-repeat, url(../img/18.png) 50% 40% no-repeat, url(../img/19.png) 75% 40%  no-repeat , url(../img/13.png) center/100% no-repeat;**/
 }
 
-.footer li{
-    float: left;
+.footer h5{
     text-align: center;
     font-size: 14px;
-    margin-left: 290px;
-    padding: 50px 0px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
 }
+
 .footer h4{
     font-size: 16px;
     font-weight: bold;
@@ -585,38 +799,32 @@ main{
 
 }
 
+
 .input_text{
     float: left;
     width: 100%;
     text-align: center;
     color: #5d5d5e;
-    margin-right: 10px;
+
 }
 .input_text input{
 
     height: 25px;
     border: 5px solid #d6dbe1;
-    margin: 10px 25px;
     background-color: #d6dbe1;
-    padding-right: 33px;
 }
 .text_area{
     text-align: center;
 }
 .text_area textarea{
-
-    height: 25px;
     border: 5px solid #d6dbe1;
-    margin: 0px 100px;
-    padding-right: 380px;
     background-color: #d6dbe1;
-}
-    
-.footer>input{
+} 
+ 
+
+/**.footer>input{
     text-align: center;
     width: 150px;
-    margin-left: 600px;
-    margin-top: 20px;
     height: 25px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -627,6 +835,7 @@ main{
     transition: all 0.2s;
     transform: scale(1);
 }
+**/
 
 .footer>input:hover{
     background: #fff;
@@ -635,14 +844,35 @@ main{
 .footer>input:active{
     transform: scale(1.2);
 }
+
+@media (max-width: 988px){
+    .text_area textarea, .text_area, .footer p, .footer h4, .footer, .footer img, .footer h5, .footer h2, .input_text input, .input_text {
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    } 
+   /** .footer{
+        background-attachment: none; ----НЕ убирает прокрутку 
+    } **/
+    .footer::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
 .cart{
     width: 100%;
     height: 300px;
-    text-align: center;
     background: url(../img/cart.png)  no-repeat;
     padding-top: 100px;
 }
-.cart h5{
+/**.cart h5{
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -653,7 +883,7 @@ main{
     box-shadow: 0px 5px 10px 1px;
     margin: 40px 330px 20px 900px;
     
-}
+}**/
 .author{
     width: 100%;
     height: 60px;
@@ -662,6 +892,23 @@ main{
 .author cite{
     color: #fff;
     text-align: center;
-    margin: 20px 550px;
     line-height: 60px;
-} **/
+} 
+@media (max-width: 988px){
+    .author, .author cite {
+        color: #fff;
+        position: relative;
+        z-index: 2;
+    } 
+
+    .footer::after{
+        content: "";
+        bottom: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        position:absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
