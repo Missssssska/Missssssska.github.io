@@ -856,9 +856,12 @@ main{
         position: relative;
         z-index: 3;
     } 
-   /** .footer{
-        background-attachment: none; ----НЕ убирает прокрутку 
-    } **/
+    .footer input{
+        padding: none;
+    }
+    .footer{
+        position: relative;
+    }
     .footer::after{
         content: "";
         bottom: 0;
