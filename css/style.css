@@ -68,6 +68,14 @@ main{
     transform: scale(1.4);
 }
 
+.active{
+    font-variant: small-caps; 
+    font-size:16px; 
+    padding-left:7px; 
+    word-spacing: 1px;
+}
+
+
 @keyframes topshift{
     from{
         opacity: 0;
@@ -441,13 +449,13 @@ main{
 }
 
 
-.foto{
+/*.foto{
     width: 100%;
     height: 500px;
     background: url(../img/foto.png) 100% center/70% 90% no-repeat;
     background-position: center; 
 
-}
+}*/
 
 @media (max-width: 988px){
     .foto{
@@ -538,7 +546,9 @@ main{
 .price{
     text-align: center;
     width: 100%;
-    background: url(../img/text/l.png) center 87%  no-repeat ;
+    background: url(../img/text/l.png) center 83%  no-repeat ;
+
+
 }
 .price h2{
     text-align: center;
@@ -564,10 +574,11 @@ main{
 .price table{
     color: #102032;
     text-align: left;
-    margin-left: 60px;
+    margin: 0px;
 }
 .price td{
     font-weight: bold;
+    text-align: right;
 
 }
 
@@ -626,48 +637,22 @@ main{
     background: url(../img/1.png) center/20% 3% no-repeat;
 }
 
-/**.statistics_foto{
-    -webkit-animation: statistics_form 35s ease forwards;
-    -o-animation: statistics_form 35s ease forwards;
-    animation: statistics_form 35s ease forwards;
+.statistics_foto{
+    -webkit-animation: statistics_form 15s ease forwards;
+    -o-animation: statistics_form 15s ease forwards;
+    animation: statistics_form 15s ease forwards;
     opacity: 0; 
-} **/
+} 
 
 .statistics p{
     color: #283b4e;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-top: 20px;
-}
-/**.statics{
-    float: left;
-    width: 15%;
     text-align: center;
-    padding: 10px;
-    margin: 0px 60px;
+    font-weight: bold;
 }
-.statics2{
-    float: left;
-    width: 15%;
-    text-align: center;
-    padding: 10px;
-    margin: 0px 60px;
-}
-.statics3{
-    float: left;
-    width: 15%;
-    text-align: center;
-    padding: 10px;
-    margin: 0px 60px;
-}
-.statics4{
-    float: left;
-    width: 15%;
-    text-align: center;
-    padding: 10px;
-    margin: 0px 60px;
-}
-**/
+
 
 @media (max-width: 988px){
     .statistics p, .statistics h2, .statistics, .statistics img {
@@ -700,7 +685,7 @@ main{
     }
 } 
 
-.statics:nth-child(1){
+/*.statics:nth-child(1){
     animation-delay: 2s;
 }
 .statics2:nth-child(2){
@@ -712,7 +697,7 @@ main{
 .statics4:nth-child(4){
     animation-delay: 8s;
 }
-
+*/
 
 .rewiew{
     width: 100%;
@@ -738,8 +723,8 @@ main{
 .rewiew cite{
     font-style: normal;
     font-size: 18px;
-    padding-bottom: 20px;
-    background: url(../img/11.png) 30% 100% no-repeat, url(../img/12.png) center 100% no-repeat, url(../img/12.png) 70% 100% no-repeat;
+
+   /* background: url(../img/11.png) 30% 100% no-repeat, url(../img/12.png) center 100% no-repeat, url(../img/12.png) 70% 100% no-repeat; */
 }
 
 @media (max-width: 988px){
