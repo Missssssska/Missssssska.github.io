@@ -8,6 +8,7 @@
 	<meta property="og:title" content="Это моя первая страница ...">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -16,8 +17,16 @@
 	<title>Бушмелева Анна - Веб-разработчик</title>
 </head>
 
-<body>
+<body> 
     <header>
+      
+        <div class="preloader">
+          <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+          </div>
+        </div> 
+        
         <nav>
           <div class="lds-dual-ring"></div>
            <div class="container">
@@ -56,6 +65,7 @@
                 </div>
             </div>
         </nav>
+        
     </header>
     <main>
         <section class="main">
@@ -66,12 +76,13 @@
                   <input type="button" value="Обо мне">
                   <input type="button" value="Мои работы"> 
                 </div>
+                
            </div></div></div>
         </section>
 
         <div class="section"><div class="summary " id ="my_summary"> 
            <div class="container h-100"><div class="row align-items-center h-100 "><div class="col-lg-8 offset-lg-2 h-100  " >
-                <h2>Обо мне</h2>
+                <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Обо мне</h2>
                 <div class="summary_foto"></div>
                 <div class="col-md-8 mx-auto h-100 mb-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat, quidem repellat! <br>Culpa blanditiis itaque odio in, placeat numquam ratione!</p>
@@ -84,7 +95,7 @@
         <div class="section"> <div class="skills" id ="my_skills">
             <div class="container">
                 <div class="col-12 m-2">
-                     <h2>Что я умею</h2>
+                     <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Что я умею</h2>
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
                     <div class="col">
@@ -109,7 +120,7 @@
 
         <div class="section"><div class="case" id ="my_case">
            <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-8 offset-lg-2">
-                <h2>Кейсы</h2>
+                <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Кейсы</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas dolores fuga maxime eligendi officia, impedit ea! A quam, veniam.</p>
             </div></div></div>
 </div></div>
@@ -134,7 +145,69 @@
                         <li><h5>Client:</h5><br>Lorem ipsum dolor sit amet.</li>
                         <li><h5>Website:</h5><br>https://www.google.ru</li>
                     </ul>
-                    <input type="button" value="Visit live site">
+                    
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Обратная связь
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form action="php/mail.php" method="post">
+                              <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                  <input type="email" name="user_email" required class="form-control" id="inputEmail3">
+                                </div>
+                              </div>
+                              <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Номер</label>
+                                <div class="col-sm-10">
+                                  <input type="phone"  name="user_phone" required class="form-control" id="inputTel">
+                                </div>
+                              </div>
+                              <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-6 pt-0">Вы первый раз на этом сайте? </legend>
+                                <div class="col-sm-6">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                      Да
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                      Нет
+                                    </label>
+                                  </div>
+                               
+                                </div>
+                              </fieldset>
+                              <div class="row mb-3">
+                                <div class="col-sm-10 ">
+                                  <div class="form-check">
+                                    <input class="form-check-input" name="check" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                      Пользовательское соглашение
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                 </div>
 
                 <div class="col-8">
@@ -143,28 +216,13 @@
                     </ul>
                 </div>
              </div>
-           <!-- <div class="container"><div class="row justify-content-lg-center"><div class="col-lg-6  ">
-                <ul>
-                    <li><h5>Client:</h5><br>Lorem ipsum dolor sit amet.</li>
-                    <li><h5>Website:</h5><br>https://www.google.ru</li>
-                </ul>
-                <input type="button" value="Visit live site">
-            </div></div></div>
-        </div>
-
-        <div class="case_a">
-           <div class="container"><div class="row"><div class=" col-lg-9">
-                <ul>
-                    <li><h5>Названия проекта:</h5><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla aut laborum officiis placeat omnis a laboriosam id!</li>
-                </ul>
-            </div></div></div> -->
             </div>
         </div>
 
         <div class="section"><div class="price" id="my_price">
            <div class="container">        
                 <div class="row border bg-center m-5"> 
-                   <h2>Расчет стоимости</h2>
+                   <h2 >Расчет стоимости</h2>
                    <div id="sum">
                     <div class="col">
                        <ul>
@@ -224,10 +282,10 @@
 
         <div class="statistics" >
            <div class="container">
-             <h2>Немного статистики</h2>
+             <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Немного статистики</h2>
              <div class="element-animation">
               <div class="statistics_foto ">
-               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 offset-1 w-100">
+               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 offset-1 w-100 ">
                 <div class="col ">     
                     <img src="C:\Users\Admin\Desktop\newproject\crs\img\7.png">
                 </div>
@@ -270,7 +328,7 @@
         <div class="section"><div class="rewiew" id ="my_rewiew">
             <div class="container w-100 ">
                 <div class="row align-items-center p-2 h-100">
-                   <h2>Отзывы</h2>
+                   <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Отзывы</h2>
                 </div>
             </div>
             <div class="container w-100 ">
@@ -298,14 +356,11 @@
             </div>
 </div></div>
               
-        
-               
-
                 
         <div class="section"><footer class="footer" id ="my_footer">
             <div class="container ">
               <div class="row offset p-3 ">
-                    <h2>Мои контакты</h2>
+                    <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Мои контакты</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam.</p>
                     <div class="col">
                      <img class ="image-link" src="../crs/img/17.png" href="../crs/img/17.png">
@@ -360,47 +415,18 @@
                 <div class="row justify-content-lg-center w-100 p-3">
                   <div class="col-md-auto">
                       <div class="mb-3 form-check"> 
-                          <button type="submit" class="btn btn-primary">Отправить</button>
+                          <button type="button" class="btn btn-primary">Отправить</button>
                       </div>
                   </div>
                 </div> 
             </div>       
         </form>
             
-          <!--    <div class="container">
-                  <div class="row justify-content-md-center p-2 w-100">
-                    <div class="col col-lg-2">
-                      <input type="text" name="text_input"  placeholder="Имя">
-                    </div>
-                    <div class="col col-lg-2">
-                      <input type="text" name="text_input"  placeholder="Email">
-                    </div>
-                  </div>
-              </div>
-              
-              <div class="container">
-                  <div class="row justify-content-lg-center w-100">
-                    <div class="col offset-4">
-                        <textarea name="text_area" placeholder="Сообщение" cols="49" rows="3"></textarea>
-                    </div>
-                  </div>
-              </div>
-              
-              <div class="row justify-content-lg-center p-3 offset">
-                <div class="col-md-auto"> 
-                    <input type="button" class="btn btn-outline-secondary" value="Отправить">
-                </div>
-              </div> -->
 </footer></div>
 
-        <div class="cart">
-           <div class="container overflow-hidden">
-              <div class="row justify-content-md-center align-items-center gx-5 ">
-                <div class="col-lg-1 col-md-auto p-2 border bg-light">
-                  <h5>I'M HERE</h5>
-                </div>
-             </div>
-           </div>
+        <div class="cart">     
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef00d70b4cb7cd5b005782935181a6dd69e5da21d3b8ec91ffd759396f4c1277&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true; scroll=false"></script>
+  
         </div>
 
         <div class="author">
@@ -423,6 +449,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     
     <script src="js/jquery.magnific-popup.min.js"></script>
+    
+    <script src="js/wow.min.js"></script>
+    
+    <script src="js/maskedinput.min.js"></script>
     
     <script src="js/myscript.js"></script>
     

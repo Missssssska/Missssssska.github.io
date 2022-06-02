@@ -1,7 +1,46 @@
 "use strict"
 
+$(document).ready(function() {
+ 
+ new WOW().init();
+    
+$("#inputTel").mask("+7(999) 999-9999");
+    
 
-//let calculator = [];
+$('form').submit(function(event){
+        
+    if ($("#inputTel").val() == "" || $("#inputEmail3").val() == ""){
+        event.preventDefault();
+        alert("Введите телефон");
+    }
+});
+    
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  };
+    
+$('form').submit(function(){
+   event.preventDefault();
+    
+    $.ajax({
+        type: "POST",
+        url: "php/mail.php",
+        data: $(this).serialize()
+    }).done(function(){
+        $(this).find("input").val("");
+        alert("Успешно отправлено!");
+        $("form").trigger("reset");
+    });
+   return false; 
+    
+});
+    
+    
+    
 let sum = 0;
 let date = 5;
 
@@ -126,7 +165,7 @@ $(window).scroll(() => {
 
 $('a[href^="#"]').click(function(){
     let valHref = $(this).attr("href");
-    $('html, body').animate({scrollTop: $(valHref).offset().top - 50 + "px"})
+    $('html, body').animate({scrollTop: $(valHref).offset().top - 60 + "px"})
     
 });
 
@@ -136,14 +175,13 @@ $(document).ready(function() {
 });
 
 
-//---------ОШИБКА------------
 $(document).ready(function(){
     
     
     let options = {threshold:[0.5]};
     let observer = new IntersectionObserver( onEntry, options);
     let element = $('.element-animation');
-    elements.each((i, el) => {
+    element.each((i, el) => {
         observer.observe(el);
     });
 });
@@ -188,5 +226,5 @@ $('select').change(function(){
      $("#table_date").html(sum_date + ' дней.');
 });
 
-
+});
 
