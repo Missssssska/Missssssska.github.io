@@ -7,7 +7,7 @@
 	<meta name="robots" content="all">
 	<meta property="og:title" content="Это моя первая страница ...">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -15,6 +15,23 @@
     
 	
 	<title>Бушмелева Анна - Веб-разработчик</title>
+	
+            <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+           ym(89522212, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/89522212" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
 </head>
 
 <body> 
@@ -25,7 +42,7 @@
             <div class="preloader__item"></div>
             <div class="preloader__item"></div>
           </div>
-        </div> 
+        </div>  
         
         <nav>
           <div class="lds-dual-ring"></div>
@@ -73,8 +90,8 @@
                <div class="title_container mt-5">
                   <h1>Привет! <br>Я Бушмелева Анна!</h1>  
                   <h4>Фулл стек веб-разработчик</h4>
-                  <input type="button" value="Обо мне">
-                  <input type="button" value="Мои работы"> 
+                   <input type="button"  value="Обо мне">
+                   <input type="button" onclick="ym(89522212,'reachGoal','cases')" value="Мои работы" >
                 </div>
                 
            </div></div></div>
@@ -83,7 +100,9 @@
         <div class="section"><div class="summary " id ="my_summary"> 
            <div class="container h-100"><div class="row align-items-center h-100 "><div class="col-lg-8 offset-lg-2 h-100  " >
                 <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Обо мне</h2>
-                <div class="summary_foto"></div>
+                <div class="summary_foto">
+                <img src="../visit/img/newimg/foto2.jpg" alt="цветок">
+                </div>
                 <div class="col-md-8 mx-auto h-100 mb-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat, quidem repellat! <br>Culpa blanditiis itaque odio in, placeat numquam ratione!</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat, quidem repellat! <br>Culpa blanditiis itaque odio in, placeat numquam ratione! </p>
@@ -93,25 +112,25 @@
         </div></div>
 
         <div class="section"> <div class="skills" id ="my_skills">
-            <div class="container">
-                <div class="col-12 m-2">
-                     <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Что я умею</h2>
+            <div class="container" >
+                <div class="col-12 ">
+                     <h2 class="wow animate__animated animate__wobble " data-wow-delay="1s" >Что я умею</h2>
                 </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id ="skills_form">
                     <div class="col">
-                        <img src="C:\Users\Admin\Desktop\newproject\crs\img\3.png" alt="ноут">
+                        <img src="../visit/img/icon/4.png" alt="коробка">
                         <h5>Веб-дизайн</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum accusantium enim, facere blanditiis consequatur, nihil iste facilis vero necessitatibus magni!</p>
                     </div>
                     <div class="col">
-                        <img src="C:\Users\Admin\Desktop\newproject\crs\img\4.png" alt="знак">
+                        <img src="../visit/img/icon/3.png" alt="знак">
                             <h5>Разработка</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore, esse quis aperiam omnis, impedit deleniti doloremque odio debitis earum.</p>
                     </div>
                     <div class="col">
-                         <img src="C:\Users\Admin\Desktop\newproject\crs\img\5.png" alt="ракета">   
+                         <img src="../visit/img/icon/2.png" alt="связь">   
                             <h5>CEO-Оптимизация</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, fuga, enim. Quo nemo eius recusandae veritatis ad laudantium laboriosam illo. </p>
                     </div>
                     <div class="col">
-                        <img src="C:\Users\Admin\Desktop\newproject\crs\img\6.png" alt="граммофон">
+                        <img src="../visit/img/icon/5.png" alt="граммофон">
                         <h5>Маркетинг</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolorem eaque aliquam eius veritatis veniam officiis officia, sed suscipit ipsum?</p>
                     </div>
                   </div>
@@ -129,21 +148,21 @@
            <div class="container w-100">
                <div class="row align-items-center h-100">
                   <div class="fotorama">
-                      <img  src="../crs/img/foto.png" >
-                      <img src="../crs/img/foto1.png" >
-                      <img src="../crs/img/foto2.png" >
+                      <img  src="../visit/img/foto.png" alt="кейс">
+                      <img src="../visit/img/foto1.png" alt="кейс">
+                      <img src="../visit/img/foto2.png" alt="кейс">
                   </div>  
                </div>
            </div>
         </div>
 
         <div class="case_i">
-           <div class="container">
+           <div class="container p-3">
              <div class="row">
                 <div class="col-4">
                     <ul>
-                        <li><h5>Client:</h5><br>Lorem ipsum dolor sit amet.</li>
-                        <li><h5>Website:</h5><br>https://www.google.ru</li>
+                        <li><h5>Client:</h5><br><p>Lorem ipsum dolor sit amet.</p></li>
+                        <li><h5>Website:</h5><br><p>https://www.google.ru</p></li>
                     </ul>
                     
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -158,7 +177,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <form action="php/mail.php" method="post">
+                            <form action="../php/mail.php" method="post">
                               <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
@@ -168,7 +187,7 @@
                               <div class="row mb-3">
                                 <label for="inputPassword3" class="col-sm-2 col-form-label">Номер</label>
                                 <div class="col-sm-10">
-                                  <input type="phone"  name="user_phone" required class="form-control" id="inputTel">
+                                  <input type="tel"  name="user_phone" required class="form-control" id="inputTel">
                                 </div>
                               </div>
                               <fieldset class="row mb-3">
@@ -220,8 +239,8 @@
         </div>
 
         <div class="section"><div class="price" id="my_price">
-           <div class="container">        
-                <div class="row border bg-center m-5"> 
+           <div class="container p-5">        
+                <div class="row border bg-center"> 
                    <h2 >Расчет стоимости</h2>
                    <div id="sum">
                     <div class="col">
@@ -260,20 +279,18 @@
                     </div>  
                    
                     <table class="table">
-                      <div class="row align-items-center">
-                        <div class="col">
+                     
                             <tr>
                                 <th>Сроки</th>
                                 <td id="table_date">0</td>
                             </tr>
-                        </div>
-                        <div class="col">
+                       
+                       
                             <tr>
                                 <th>Стоимость</th>
                                 <td id="table_sum">0</td>
                             </tr>
-                        </div> 
-                        </div>   
+                           
                     </table>
                 </div>    
                 </div>
@@ -282,27 +299,35 @@
 
         <div class="statistics" >
            <div class="container">
-             <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Немного статистики</h2>
+             <h2 class="wow animate__animated animate__wobble " data-wow-delay="1s" >Немного статистики</h2>
              <div class="element-animation">
               <div class="statistics_foto ">
-               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 offset-1 w-100 ">
+               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4  w-100 ">
                 <div class="col ">     
-                    <img src="C:\Users\Admin\Desktop\newproject\crs\img\7.png">
+                    <img src="../visit/img/icon/6.png">
+                    <p>120</p>
+                    <p> Счастливых клиентов</p>
                 </div>
                 <div class="col"> 
-                    <img src="C:\Users\Admin\Desktop\newproject\crs\img\8.png">
+                    <img src="../visit/img/icon/7.png" alt="лист">
+                    <p>4600</p>
+                    <p>Часов работы</p>
                 </div>
                 <div class="col">
-                    <img src="C:\Users\Admin\Desktop\newproject\crs\img\9.png" >
+                    <img src="../visit/img/icon/8.png" alt="диалог">
+                     <p>340</p>
+                    <p>Проектов завершено</p>
                 </div>
                 <div class="col">
-                    <img src="C:\Users\Admin\Desktop\newproject\crs\img\10.png">     
+                    <img src="../visit/img/icon/9.png" alt="лайк">  
+                    <p>23</p>
+                    <p>Наград получено</p>   
                  </div>
             </div>   
            </div>
          </div>
         </div>
-           <div class="container">
+       <!--    <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4  ">
                 <div class="col ">
                     <p>120</p>
@@ -321,7 +346,7 @@
                     <p>Наград получено</p>
                 </div>     
             </div>
-         </div>
+         </div> -->
         </div>
 
         
@@ -331,9 +356,9 @@
                    <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Отзывы</h2>
                 </div>
             </div>
-            <div class="container w-100 ">
+            <div class="container  w-100 ">
                 <div class="row align-items-center h-100">
-                    <div class="col">
+                    <div class="col ">
                         <form action="#">
                            <div class="fotorama" data-width='100%' data-height='200'>
                                 <div class="col">
@@ -359,22 +384,24 @@
                 
         <div class="section"><footer class="footer" id ="my_footer">
             <div class="container ">
-              <div class="row offset p-3 ">
-                    <h2 class="wow animate__animated animate__wobble" data-wow-delay="1s">Мои контакты</h2>
+              
+                    <h2 class="wow animate__animated animate__wobble offset p-3" data-wow-delay="1s">Мои контакты</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam.</p>
-                    <div class="col">
-                     <img class ="image-link" src="../crs/img/17.png" href="../crs/img/17.png">
-                      <h5>Москва</h5>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" id="footer_offset">
+                        <div class="col">
+                         <img  src="../visit/img/icon/11.png"  alt="лайк">
+                            <h5> Москва </h5>
+                        </div>
+                        <div class="col">
+                         <img  src="../visit/img/icon/10.png"  alt="почта">
+                          <h5>Почта <br><a href="mailto://@mail.ru"> //@mail.ru </a></h5>
+                        </div>
+                        <div class="col mx-auto">
+                         <img  src="../visit/img/icon/12.png"  alt="телефон">
+                            <h5>Номер <br><a href="tel:123-456-7890"> +7(999)999-99-99 </a></h5>
+                        </div>
                     </div>
-                    <div class="col">
-                     <img class="image-link" src="../crs/img/18.png" href="../crs/img/18.png">
-                      <h5>Почта</h5>
-                    </div>
-                    <div class="col">
-                     <img class="image-link" src="../crs/img/19.png" href="../crs/img/19.png">
-                      <h5>Номер</h5>
-                    </div>
-              </div>
+              
             </div>
             <div class="col">
                 <h4>Оставьте мне сообщение</h4>
@@ -386,7 +413,7 @@
                 <div class="col col-lg-3">
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Имя</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="text" class="form-control" id="exampleInputPassword1">
                     </div>
                 </div>
 
@@ -414,8 +441,8 @@
              <div class="container">
                 <div class="row justify-content-lg-center w-100 p-3">
                   <div class="col-md-auto">
-                      <div class="mb-3 form-check"> 
-                          <button type="button" class="btn btn-primary">Отправить</button>
+                      <div class="mb-4 mt-4 form-check"> 
+                          <button type="submit" class="btn btn-primary">Отправить</button>
                       </div>
                   </div>
                 </div> 
